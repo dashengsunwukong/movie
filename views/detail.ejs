@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title><%= title %>详情</title>
+	<meta charset="utf-8">
+	<link href="/stylesheets/detail.css" rel="stylesheet">
+	<!-- <link href="detail.css" rel="stylesheet"> -->
+</head>
+<body>
+	<div class="main">
+		<img src="<%= image %>" class="img">
+		<!-- <img src="Another.jpg" class="img"> -->
+		<div>
+			<p>文件名称：<%= title %></p>	
+			<p>上传时间：2017<p>
+			<p>文件类型：<%= type %><p>
+			<a href="/">返回首页</a>
+		</div>
+		<p class="introduce">
+			文件简介：<br>
+			<%= introduce %>
+		</p>
+	</div>
+	<div class="showVideo">
+		<h3>在线播放</h3>
+		<video src="<%= url %>" controls="controls" width="1200px">您的浏览器不支持HTML5!</video>		
+	</div>	
+</body>
+</html>
